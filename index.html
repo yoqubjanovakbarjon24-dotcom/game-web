@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GameZone — brauzerda o‘ynaladigan qiziqarli mini o‘yinlar.">
+    <title>GameZone — O‘yinlar olami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sahifa-yuklanish" id="yuklanish"></div>
+
+    <header class="yuqori-qism" id="bosh">
+        <div class="konteyner navigatsiya">
+            <a class="brend" href="#bosh">GAMEZONE</a>
+
+            <nav class="menyu">
+                <a href="#bosh">Bosh sahifa</a>
+                <a href="#oyinlar">O‘yinlar</a>
+                <a href="#kategoriyalar">Kategoriyalar</a>
+                <a href="#haqimizda">Biz haqimizda</a>
+                <a href="#fikrlar">Fikrlar</a>
+                <a href="#aloqa">Aloqa</a>
+            </nav>
+
+            <a class="tugma tugma-kichik" href="#oyinlar">O‘ynashni boshlash</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="qahramon bolim" id="kirish">
+            <div class="konteyner qahramon-ichki">
+                <div class="qahramon-matn">
+                    <p class="ustki-matn">O‘YINLAR OLAMIGA XUSH KELIBSIZ</p>
+
+                    <h1>
+                        Har bir kuningni
+                        <span>o‘yin bilan</span>
+                        yanada qiziqarli qil!
+                    </h1>
+
+                    <p class="qahramon-tavsif">
+                        Sevimli mini o‘yinlaringni tanla, yangi marralarni zabt et
+                        va maroqli vaqt o‘tkaz.
+                    </p>
+
+                    <div class="qahramon-harakat">
+                        <a class="tugma" href="#oyinlar">O‘yinlarni ko‘rish</a>
+                        <a class="tugma tugma-ikkinchi" href="#haqimizda">
+                            Batafsil ma’lumot
+                        </a>
+                    </div>
+
+                    <div class="statistika">
+                        <div class="statistika-element">
+                            <strong>35+</strong>
+                            <span>Qiziqarli o‘yin</span>
+                        </div>
+
+                        <div class="statistika-element">
+                            <strong>12K</strong>
+                            <span>Faol o‘yinchi</span>
+                        </div>
+
+                        <div class="statistika-element">
+                            <strong>24/7</strong>
+                            <span>Doimiy zavq</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="qahramon-rasm">
+                    <img
+                        src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200"
+                        alt="Kompyuterda o‘yin o‘ynayotgan inson"
+                    >
+                    <div class="rasm-yorliq">
+                        Sarguzasht shu yerdan boshlanadi
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="afzalliklar bolim">
+            <div class="konteyner afzalliklar-tarmoq">
+                <article class="afzallik-karta">
+                    <h3>Tez ishga tushadi</h3>
+                    <p>O‘yinlarni brauzeringda och.</p>
+                </article>
+
+                <article class="afzallik-karta">
+                    <h3>Bepul zavq</h3>
+                    <p>Ko‘plab o‘yinlardan bepul foydalan.</p>
+                </article>
+
+                <article class="afzallik-karta">
+                    <h3>Har kimga mos</h3>
+                    <p>Oson boshqaruv va qulay ko‘rinish.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="oyinlar bolim" id="oyinlar">
+            <div class="konteyner">
+                <div class="bolim-sarlavha">
+                    <p class="ustki-matn">SEN UCHUN TANLANDI</p>
+                    <h2>Bizning mini o‘yinlarimiz</h2>
+                    <p>
+                        Quyidagi o‘yinlardan birini tanla va maroqli vaqt o‘tkaz.
+                    </p>
+                </div>
+
+                <div class="qidiruv-qatori">
+                    <input
+                        type="text"
+                        id="oyinQidiruv"
+                        placeholder="O‘yin nomini qidirish..."
+                        aria-label="O‘yin qidirish"
+                    >
+                    <button class="tugma" id="qidiruvTugma" type="button">
+                        Qidirish
+                    </button>
+                </div>
+
+                <div class="filtrlar">
+                    <button class="filtr-tugma" type="button" data-filter="Barchasi">Barchasi</button>
+                    <button class="filtr-tugma" type="button" data-filter="Mantiq">Mantiq</button>
+                    <button class="filtr-tugma" type="button" data-filter="Poyga">Poyga</button>
+                    <button class="filtr-tugma" type="button" data-filter="Sport">Sport</button>
+                    <button class="filtr-tugma" type="button" data-filter="Sarguzasht">Sarguzasht</button>
+                    <button class="filtr-tugma" type="button" data-filter="Strategiya">Strategiya</button>
+                    <button class="filtr-tugma" type="button" data-filter="Ijodiy">Ijodiy</button>
+                </div>
+
+                <div class="oyinlar-tarmoq" id="oyinlarTarmoq">
+                    <article class="oyin-karta" data-category="Mantiq va chaqqonlik" data-name="iloncha sarguzashti">
+                        <div class="oyin-rasm">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=900" alt="Iloncha sarguzashti o‘yini uchun rasm" loading="lazy">
+                            <span class="oyin-raqam">01</span>
+                        </div>
+
+                        <div class="oyin-karta-matn">
+                            <div class="oyin-karta-belgi">GameZone mini o‘yini</div>
+                            <p class="oyin-tur">Mantiq va chaqqonlik</p>
+                            <h3>Iloncha sarguzashti</h3>
+                            <p>Qiziqarli topshiriqlarni bajar va o‘z mahoratingni sinab ko‘r.</p>
+                            <button class="oyin-boshlash" type="button" data-game="Iloncha sarguzashti">O‘yinni boshlash</button>
+                            <p class="oyin-qoshimcha">Brauzer orqali tanlash mumkin bo‘lgan mini o‘yin.</p>
+                        </div>
+                    </article>
+
+                    <article class="oyin-karta" data-category="Poyga" data-name="tezkor poyga">
+                        <div class="oyin-rasm">
+                            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=900" alt="Tezkor poyga o‘yini uchun rasm" loading="lazy">
+                            <span class="oyin-raqam">02</span>
+                        </div>
+
+                        <div class="oyin-karta-matn">
+                            <div class="oyin-karta-belgi">GameZone mini o‘yini</div>
+                            <p class="oyin-tur">Poyga</p>
+                            <h3>Tezkor poyga</h3>
+                            <p>Qiziqarli topshiriqlarni bajar va o‘z mahoratingni sinab ko‘r.</p>
+                            <button class="oyin-boshlash" type="button" data-game="Tezkor poyga">O‘yinni boshlash</button>
+                            <p class="oyin-qoshimcha">Brauzer orqali tanlash mumkin bo‘lgan mini o‘yin.</p>
+                        </div>
+                    </article>
+
+                    <article class="oyin-karta" data-category="Mantiq" data-name="sehrli jumboq">
+                        <div class="oyin-rasm">
+                            <img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=900" alt="Sehrli jumboq o‘yini uchun rasm" loading="lazy">
+                            <span class="oyin-raqam">03</span>
+                        </div>
+
+                        <div class="oyin-karta-matn">
+                            <div class="oyin-karta-belgi">GameZone mini o‘yini</div>
+                            <p class="oyin-tur">Mantiq</p>
+                            <h3>Sehrli jumboq</h3>
+                            <p>Qiziqarli topshiriqlarni bajar va o‘z mahoratingni sinab ko‘r.</p>
+                            <button class="oyin-boshlash" type="button" data-game="Sehrli jumboq">O‘yinni boshlash</button>
+                            <p class="oyin-qoshimcha">Brauzer orqali tanlash mumkin bo‘lgan mini o‘yin.</p>
+                        </div>
+                    </article>
+                                        <article class="oyin-karta" data-category="Sport" data-name="futbol maydoni">
+                        <div class="oyin-rasm">
+                            <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=900" alt="Futbol maydoni" loading="lazy">
+                            <span class="oyin-raqam">04</span>
+                        </div>
+                        <div class="oyin-karta-matn">
+                            <div class="oyin-karta-belgi">GameZone mini o‘yini</div>
+                            <p class="oyin-tur">Sport</p>
+                            <h3>Futbol maydoni</h3>
+                            <p>Qiziqarli topshiriqlarni bajar va o‘z mahoratingni sinab ko‘r.</p>
+                            <button class="oyin-boshlash" type="button" data-game="Futbol maydoni">O‘yinni boshlash</button>
+                            <p class="oyin-qoshimcha">Brauzer orqali tanlash mumkin bo‘lgan mini o‘yin.</p>
+                        </div>
+                    </article>
+
+                    <article class="oyin-karta" data-category="Sarguzasht" data-name="kosmik sayohat">
+                        <div class="oyin-rasm">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900" alt="Kosmik sayohat" loading="lazy">
+                            <span class="oyin-raqam">05</span>
+                        </div>
+                        <div class="oyin-karta-matn">
+                            <div class="oyin-karta-belgi">GameZone mini o‘yini</div>
+                            <p class="oyin-tur">Sarguzasht</p>
+                            <h3>Kosmik sayohat</h3>
+                            <p>Qiziqarli topshiriqlarni bajar va o‘z mahoratingni sinab ko‘r.</p>
+                            <button class="oyin-boshlash" type="button" data-game="Kosmik sayohat">O‘yinni boshlash</button>
+                            <p class="oyin-qoshimcha">Brauzer orqali tanlash mumkin bo‘lgan mini o‘yin.</p>
+                        </div>
+                    </article>
+
+                    <article class="oyin-karta" data-category="Mantiq" data-name="xotira sinovi">
+                        <div class="oyin-rasm">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900" alt="Xotira sinovi" loading="lazy">
+                            <span class="oyin-raqam">06</span>
+                        </div>
+                        <div class="oyin-karta-matn">
+                            <div class="oyin-karta-belgi">GameZone mini o‘yini</div>
+                            <p class="oyin-tur">Mantiq</p>
+                            <h3>Xotira sinovi</h3>
+                            <p>Qiziqarli topshiriqlarni bajar va o‘z mahoratingni sinab ko‘r.</p>
+                            <button class="oyin-boshlash" type="button" data-game="Xotira sinovi">O‘yinni boshlash</button>
+                            <p class="oyin-qoshimcha">Brauzer orqali tanlash mumkin bo‘lgan mini o‘yin.</p>
+                        </div>
+                    </article>
+
+                    <article class="oyin-karta" data-category="Sarguzasht" data-name="dengiz sarguzashti">
+                        <div class="oyin-rasm">
+                            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=900" alt="Dengiz sarguzashti" loading="lazy">
+                            <span class="oyin-raqam">07</span>
+                        </div>
+                        <div class="oyin-karta-matn">
+                            <div class="oyin-karta-belgi">GameZone mini o‘yini</div>
+                            <p class="oyin-tur">Sarguzasht</p>
+                            <h3>Dengiz sarguzashti</h3>
+                            <p>Qiziqarli topshiriqlarni bajar va o‘z mahoratingni sinab ko‘r.</p>
+                            <button class="oyin-boshlash" type="button" data-game="Dengiz sarguzashti">O‘yinni boshlash</button>
+                            <p class="oyin-qoshimcha">Brauzer orqali tanlash mumkin bo‘lgan mini o‘yin.</p>
+                        </div>
+                    </article>
+
+                    <article class="oyin-karta" data-category="Poyga" data-name="tog‘ poygasi">
+                        <div class="oyin-rasm">
+                            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900" alt="Tog‘ poygasi" loading="lazy">
+                            <span class="oyin-raqam">08</span>
+                        </div>
+                        <div class="oyin-karta-matn">
+                            <div class="oyin-karta-belgi">GameZone mini o‘yini</div>
+                            <p class="oyin-tur">Poyga</p>
+                            <h3>Tog‘ poygasi</h3>
+                            <p>Qiziqarli topshiriqlarni bajar va o‘z mahoratingni sinab ko‘r.</p>
+                            <button class="oyin-boshlash" type="button" data-game="Tog‘ poygasi">O‘yinni boshlash</button>
+                            <p class="oyin-qoshimcha">Brauzer orqali tanlash mumkin bo‘lgan mini o‘yin.</p>
+                        </div>
+                    </article>
+
+                    <article class="oyin-karta" data-category="Ijodiy" data-name="ranglar olami">
+                        <div class="oyin-rasm">
+                            <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=900" alt="Ranglar olami" loading="lazy">
+                            <span class="oyin-raqam">09</span>
+                        </div>
+                        <div class="oyin-karta-matn">
+                            <div class="oyin-karta-belgi">GameZone mini o‘yini</div>
+                            <p class="oyin-tur">Ijodiy</p>
+                            <h3>Ranglar olami</h3>
+                            <p>Qiziqarli topshiriqlarni bajar va o‘z mahoratingni sinab ko‘r.</p>
+                            <button class="oyin-boshlash" type="button" data-game="Ranglar olami">O‘yinni boshlash</button>
+                            <p class="oyin-qoshimcha">Brauzer orqali tanlash mumkin bo‘lgan mini o‘yin.</p>
+                        </div>
+                    </article>
+
+                    <article class="oyin-karta" data-category="Mantiq" data-name="shaxmat vaqti">
+                        <div class="oyin-rasm">
+                            <img src="https://images.unsplash.com/photo-1529699211952-671e9477e3bb?w=900" alt="Shaxmat vaqti" loading="lazy">
+                            <span class="oyin-raqam">10</span>
+                        </div>
+                        <div class="oyin-karta-matn">
+                            <div class="oyin-karta-belgi">GameZone mini o‘yini</div>
+                            <p class="oyin-tur">Mantiq</p>
+                            <h3>Shaxmat vaqti</h3>
+                            <p>Qiziqarli topshiriqlarni bajar va o‘z mahoratingni sinab ko‘r.</p>
+                            <button class="oyin-boshlash" type="button" data-game="Shaxmat vaqti">O‘yinni boshlash</button>
+                            <p class="oyin-qoshimcha">Brauzer orqali tanlash mumkin bo‘lgan mini o‘yin.</p>
+                        </div>
+                    </article>
+                                    </div>
+                <p class="natija-xabari" id="natijaXabari"></p>
+            </div>
+        </section>
+
+        <section class="banner bolim">
+            <div class="konteyner banner-ichki">
+                <div>
+                    <p class="ustki-matn">SENING NAVBATIN</p>
+                    <h2>Yangi rekord o‘rnatishga tayyormisan?</h2>
+                    <p>Bugun o‘zingni sinab ko‘r va sevimli o‘yiningni top.</p>
+                </div>
+                <a class="tugma tugma-oq" href="#oyinlar">Hozir boshlash</a>
+            </div>
+        </section>
+
+        <section class="kategoriyalar bolim" id="kategoriyalar">
+            <div class="konteyner">
+                <div class="bolim-sarlavha">
+                    <p class="ustki-matn">O‘ZINGGA MOSINI TANLA</p>
+                    <h2>O‘yin kategoriyalari</h2>
+                    <p>Kayfiyatingga mos yo‘nalishni tanla.</p>
+                </div>
+
+                <div class="kategoriya-tarmoq">
+                    <article class="kategoriya-karta">
+                        <img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=900" alt="Mantiqiy o‘yinlar">
+                        <div>
+                            <h3>Mantiqiy o‘yinlar</h3>
+                            <p>Fikrlash va topqirlikni sinaydi.</p>
+                            <a href="#oyinlar">O‘yinlarni ko‘rish</a>
+                        </div>
+                    </article>
+
+                    <article class="kategoriya-karta">
+                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=900" alt="Poyga o‘yinlari">
+                        <div>
+                            <h3>Poyga o‘yinlari</h3>
+                            <p>Tezlik va chaqqonlikni his qil.</p>
+                            <a href="#oyinlar">O‘yinlarni ko‘rish</a>
+                        </div>
+                    </article>
+
+                    <article class="kategoriya-karta">
+                        <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=900" alt="Sport o‘yinlari">
+                        <div>
+                            <h3>Sport o‘yinlari</h3>
+                            <p>Sevimli sport turingni tanla.</p>
+                            <a href="#oyinlar">O‘yinlarni ko‘rish</a>
+                        </div>
+                    </article>
+
+                    <article class="kategoriya-karta">
+                        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900" alt="Sarguzasht o‘yinlari">
+                        <div>
+                            <h3>Sarguzasht o‘yinlari</h3>
+                            <p>Yangi olamlarni kashf et.</p>
+                            <a href="#oyinlar">O‘yinlarni ko‘rish</a>
+                        </div>
+                    </article>
+
+                    <article class="kategoriya-karta">
+                        <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=900" alt="Strategiya o‘yinlari">
+                        <div>
+                            <h3>Strategiya o‘yinlari</h3>
+                            <p>Reja tuz va g‘alabaga erish.</p>
+                            <a href="#oyinlar">O‘yinlarni ko‘rish</a>
+                        </div>
+                    </article>
+
+                    <article class="kategoriya-karta">
+                        <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=900" alt="Ijodiy o‘yinlar">
+                        <div>
+                            <h3>Ijodiy o‘yinlar</h3>
+                            <p>Tasavvuringni ishga sol.</p>
+                            <a href="#oyinlar">O‘yinlarni ko‘rish</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="kun-oyin bolim">
+            <div class="konteyner kun-oyin-ichki">
+                <div class="kun-oyin-rasm">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1100" alt="Bugungi o‘yin">
+                </div>
+                <div class="kun-oyin-matn">
+                    <p class="ustki-matn">BUGUNGI TAVSIYA</p>
+                    <h2>Bugun yangi o‘yin sinab ko‘r!</h2>
+                    <p>Har kuni yangi maqsad qo‘y. O‘yinlar orqali fikrlash va e’tiborni mashq qil.</p>
+                    <a href="#oyinlar" class="tugma">Tavsiyalarni ko‘rish</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="haqimizda bolim" id="haqimizda">
+            <div class="konteyner haqimizda-ichki">
+                <div class="haqimizda-rasm">
+                    <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=1000" alt="O‘yin texnologiyalari">
+                </div>
+                <div class="haqimizda-matn">
+                    <p class="ustki-matn">BIZ HAQIMIZDA</p>
+                    <h2>O‘yin orqali quvonch ulashamiz</h2>
+                    <p>GameZone — brauzer orqali turli mini o‘yinlarni topish va sinab ko‘rish uchun yaratilgan sahifa.</p>
+                    <p>Bu yerda turli yo‘nalishdagi o‘yinlar jamlangan. O‘zingga yoqqanini tanla.</p>
+                    <a href="#oyinlar" class="tugma">O‘yinlarni tanlash</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="qanday-ishlaydi bolim">
+            <div class="konteyner">
+                <div class="bolim-sarlavha">
+                    <p class="ustki-matn">JUDA OSON</p>
+                    <h2>Qanday foydalaniladi?</h2>
+                    <p>Bir necha oddiy qadam bilan o‘yin tanla.</p>
+                </div>
+
+                <div class="qadamlar-tarmoq">
+                    <article class="qadam-karta">
+                        <span>01</span>
+                        <h3>O‘yinni tanla</h3>
+                        <p>Katalogdan o‘zingga yoqqan o‘yinni top.</p>
+                    </article>
+
+                    <article class="qadam-karta">
+                        <span>02</span>
+                        <h3>Boshlash tugmasini bos</h3>
+                        <p>O‘yin haqida ma’lumotni ko‘r.</p>
+                    </article>
+
+                    <article class="qadam-karta">
+                        <span>03</span>
+                        <h3>Maza qilib o‘yna</h3>
+                        <p>Yangi maqsadlar qo‘y va natijangni yaxshila.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="galereya bolim">
+            <div class="konteyner">
+                <div class="bolim-sarlavha">
+                    <p class="ustki-matn">O‘YIN MUHITI</p>
+                    <h2>O‘yinlardan lavhalar</h2>
+                    <p>Rang-barang o‘yin dunyosiga bir nazar tashla.</p>
+                </div>
+
+                <div class="galereya-tarmoq">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=900" alt="Kompyuter o‘yinlari">
+                        <figcaption>Kompyuter o‘yinlari</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=900" alt="O‘yin jarayoni">
+                        <figcaption>O‘yin jarayoni</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900" alt="Raqamli olam">
+                        <figcaption>Raqamli olam</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="fikrlar bolim" id="fikrlar">
+            <div class="konteyner">
+                <div class="bolim-sarlavha">
+                    <p class="ustki-matn">FOYDALANUVCHILAR FIKRI</p>
+                    <h2>Odamlar biz haqimizda nima deydi?</h2>
+                </div>
+
+                <div class="fikrlar-tarmoq">
+                    <article class="fikr-karta">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300" alt="Dilshod">
+                        <div class="fikr-yulduz">★★★★★</div>
+                        <p>“Sayt juda qulay ekan. O‘yinlarni topish oson.”</p>
+                        <h3>Dilshod Karimov</h3>
+                        <span>GameZone foydalanuvchisi</span>
+                    </article>
+
+                    <article class="fikr-karta">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300" alt="Madina">
+                        <div class="fikr-yulduz">★★★★★</div>
+                        <p>“Dizayni juda chiroyli va ishlatish oson.”</p>
+                        <h3>Madina Aliyeva</h3>
+                        <span>GameZone foydalanuvchisi</span>
+                    </article>
+
+                    <article class="fikr-karta">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300" alt="Jasur">
+                        <div class="fikr-yulduz">★★★★★</div>
+                        <p>“Kategoriyalar bo‘yicha tanlash qulay.”</p>
+                        <h3>Jasur Rahimov</h3>
+                        <span>GameZone foydalanuvchisi</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="savollar bolim">
+            <div class="konteyner">
+                <div class="bolim-sarlavha">
+                    <p class="ustki-matn">SAVOLLAR VA JAVOBLAR</p>
+                    <h2>Ko‘p beriladigan savollar</h2>
+                </div>
+
+                <details class="savol-karta">
+                    <summary>GameZone saytidan foydalanish bepulmi?</summary>
+                    <p>Ha, o‘yinlar katalogini ko‘rish bepul.</p>
+                </details>
+
+                <details class="savol-karta">
+                    <summary>O‘yinlarni telefonda ochsam bo‘ladimi?</summary>
+                    <p>Ha, sayt telefon ekraniga ham moslashadi.</p>
+                </details>
+
+                <details class="savol-karta">
+                    <summary>O‘yinni qanday qidiraman?</summary>
+                    <p>Qidiruv maydoniga o‘yin nomini yozing.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="aloqa bolim" id="aloqa">
+            <div class="konteyner aloqa-ichki">
+                <div>
+                    <p class="ustki-matn">BIZ BILAN BOG‘LAN</p>
+                    <h2>Taklifing bormi?</h2>
+                    <p>Sayt haqida fikr yoki yangi o‘yin bo‘yicha taklifingni yubor.</p>
+                </div>
+                <div class="aloqa-karta">
+                    <p>Elektron pochta</p>
+                    <a href="mailto:info@gamezone.uz">info@gamezone.uz</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pastki-qism">
+        <div class="konteyner footer-ichki">
+            <div>
+                <a class="brend" href="#bosh">GAMEZONE</a>
+                <p>O‘yinlar olamida maroqli vaqt o‘tkaz!</p>
+            </div>
+            <div class="footer-havolalar">
+                <a href="#bosh">Bosh sahifa</a>
+                <a href="#oyinlar">O‘yinlar</a>
+                <a href="#haqimizda">Biz haqimizda</a>
+                <a href="#fikrlar">Fikrlar</a>
+            </div>
+        </div>
+        <div class="konteyner footer-oxiri">
+            <p>© 2026 GameZone</p>
+            <a href="#bosh">Yuqoriga qaytish</a>
+        </div>
+    </footer>
+
+    <div class="xabar-oynasi" id="xabarOynasi">
+        <div class="xabar-oynasi-ichki">
+            <button type="button" id="xabarYopish">Yopish</button>
+            <p class="ustki-matn">GAMEZONE</p>
+            <h2 id="xabarSarlavha">O‘yin tanlandi</h2>
+            <p id="xabarMatn">O‘yin tez orada ishga tushadi.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
